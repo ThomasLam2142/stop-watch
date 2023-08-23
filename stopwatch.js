@@ -1,19 +1,25 @@
 let appState = "off";
 let currentTime = 0;
+const spanElement = document.getElementById("displayTime");
+
+
 
 
 function startClick(){
     console.log("start button clicked");
-    appState = "on"
+    appState = "on";
 
 }
 
 function stopClick(){
-    console.log("stop button clicked")
+    console.log("stop button clicked");
+    appState = "off";
 }
 
 function resetClick(){
-    console.log("reset button clicked")
+    console.log("reset button clicked");
+    currentTime = 0;
+    spanElement.textContent = currentTime.toString();
 }
 
 
@@ -28,8 +34,10 @@ function clockUpdate() {
     }
 
     console.log(currentTime);
-  }
+    spanElement.textContent = currentTime.toString();
+
+}
   
-  // Call the function every 3000 milliseconds (3 seconds)
-  setInterval(clockUpdate, 1000);
+// Call the function every 1000 milli
+setInterval(clockUpdate, 1000);
   

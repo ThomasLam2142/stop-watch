@@ -8,25 +8,29 @@
         <script src="stopwatch.js" async></script>
     </head>
 
-    <header>
-        <h1>Stopwatch</h1>
-    </header>
 
-    <body>
-        <h1>Time: 
-            <span Id="displayTime">0</span>
-            <span>:</span>
-            <span Id = "displayMilli">00</span>
-        </h1>
-
-        <form>
-            
-            <button type="button" onclick="startClick()">Start</button>
-            <button type="button" onclick="stopClick()">Stop</button>
-            <button type="button" onclick="resetClick()">Reset</button>
-        </form>
-
-
-    </body>
-
+    <div class = "container">
+        <header>
+            <h1>Stopwatch</h1>
+        </header>
+        <div>
+            <body>
+                <div>
+                    <h1>Time: 
+                        <span Id="displayTime">0</span>
+                        <span>:</span>
+                        <span Id = "displayMilli">00</span>
+                    </h1>
+                </div>
+                <div>
+                    <form>
+                        
+                        <button type="button" class="button" onclick="startClick()">Start</button>
+                        <button type="button" class="button" onclick="stopClick()">Stop</button>
+                        <button type="button" class="button" onclick="resetClick()">Reset</button>
+                    </form>
+                </div>
+            </body>
+        </div>
+    </div>
 </html>
